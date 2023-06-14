@@ -10,7 +10,6 @@ WORKDIR $HOME
 
 
 RUN sudo apt update
-RUN sudo apt upgrade
 RUN sudo apt install ansible
 
 
