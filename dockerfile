@@ -1,4 +1,4 @@
-FROM kasmweb/ubuntu-jammy-dind:1.13.1
+FROM kasmweb/ubuntu-jammy-dind:1.13.1-rolling
 USER root
 
 ENV HOME /home/kasm-default-profile
@@ -9,7 +9,9 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 
-RUN touch $HOME/Desktop/hello.txt
+RUN sudo apt update
+RUN sudo apt upgrade
+RUN sudo apt install ansible
 
 
 ######### End Customizations ###########
