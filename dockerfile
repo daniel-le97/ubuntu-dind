@@ -9,8 +9,8 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 
-RUN sudo apt update
-RUN sudo apt install ansible
+RUN  apt update
+RUN  apt install ansible
 
 
 ######### End Customizations ###########
