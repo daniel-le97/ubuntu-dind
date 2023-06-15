@@ -11,10 +11,9 @@ WORKDIR $HOME
 RUN apt update
 RUN apt -y upgrade
 RUN apt -y install ansible
-RUN apt -y install wget
-RUN wget https://github.com/Eugeny/tabby/releases/download/v1.0.181/tabby-1.0.181-linux-x64.deb
+RUN wget https://github.com/Eugeny/tabby/releases/download/v1.0.197/tabby-1.0.197-linux-x64.deb
 RUN apt --fix-broken install -y
-RUN apt -y install ./tabby-1.0.181-linux-x64.deb
+RUN apt -y install ./tabby-1.0.197-linux-x64.deb
 
 ######### End Customizations ###########
 
