@@ -14,6 +14,7 @@ RUN apt -y install ansible
 RUN wget https://github.com/Eugeny/tabby/releases/download/v1.0.197/tabby-1.0.197-linux-x64.deb
 RUN apt --fix-broken install -y
 RUN apt -y install ./tabby-1.0.197-linux-x64.deb
+RUN curl -fsSL https://bun.sh/install | bash
 
 ######### End Customizations ###########
 
